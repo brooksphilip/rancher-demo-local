@@ -64,17 +64,17 @@ spec:
     secretName: cow-ingress
 
 
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: redis
-  labels:
-    app: redis
-spec:
-  storageClassName: "longhorn-crypto-global"
-  accessModes:
-  - ReadWriteMany
-  resources:
-    requests:
-      storage: 250Mi
+# ---
+# apiVersion: v1
+# kind: PersistentVolumeClaim
+# metadata:
+#   name: redis
+#   labels:
+#     app: redis
+# spec:
+#   storageClassName: "longhorn-crypto-global"
+#   accessModes:
+#   - ReadWriteMany
+#   resources:
+#     requests:
+#       storage: 250Mi
