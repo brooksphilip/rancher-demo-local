@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cowsay
-  namespace: default
+  namespace: demo
   labels:
     app: demo
 spec:
@@ -31,7 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: cowsay
-  namespace: default
+  namespace: demo
 spec:
   selector:
     app: demo
@@ -45,7 +45,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: cowsay
-  namespace: default
+  namespace: demo
 spec:
   rules:
   - host: cow.demo.rancher.lol
